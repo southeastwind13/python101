@@ -1,0 +1,55 @@
+
+Statistics is a fact about or summary of some data.
+
+
+What Statistic can do?
+
+What statistic can't do?
+
+Types of statistic
+1. Descriptive -> Describe and summarize data
+2. Inferential -> Use sample of data to make inferences about a larger population
+
+Types of data (Also have another type but we focus on these 2 types first)
+1. Numeric(Quantitative)
+- Continuous (Measured) -> Car speed, Time spent
+- Discrete (Counted) -> Number of pets, Number of ...
+2. Categorical(Qualitative)
+- Nominal (Unordered) -> Married/Unmarried
+- Ordinal (Ordered) -> Survey question degree
+
+Central
+- Mean: Good with data that have symmetrical data but weak for the outlier.
+- Median: Good with data that have skew or outlier.
+
+Spread
+1. Varian
+  - Calculate mean 
+  - Subtract mean from each data points ()
+  - Square each distance
+  - Sum square of distance
+  - Divide by number of data point - 1
+- Unit of variance are squared
+- Use numpy
+  - np.var(df['col1'], ddof=1)
+  - ddof = 1 => calculate variance of sample
+  - doof != 1 => calculate variance of population
+
+2. Standard deviation
+  - square root of variance
+  - np.std(df['col1', ddof=1])
+  - unit is the same with the data
+
+3. Mean absolute deviation
+  - Calculate mean 
+  - Subtract mean from each data points ()
+  - Absolute of distance
+  - Divide by number of data point - 1
+
+Standard deviation vs Mean absolute deviation
+- Standard deviation square distances, penalize longer distance more than shorter ones.
+- Mean absolute deviation penalize each distance equally.
+- One ins't better than other, but the SD is common than MAD.
+
+
+
