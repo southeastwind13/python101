@@ -21,7 +21,9 @@ class GoogleDriveHelper():
         2. credential: The credential to handle Google drive.
 
         Remark:
-        We can checks other scope by the link below.
+        - We can checks more functionality in the link below.
+        https://developers.google.com/drive/api/guides/about-sdk
+        - We can checks other scope by the link below.
         https://developers.google.com/drive/api/guides/api-specific-auth
         '''
         
